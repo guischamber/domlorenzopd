@@ -234,6 +234,24 @@
 .nav-pills .nav-item .active {
   border-bottom: 2px solid var(--primary);
 }
+/** alteração para mouse hover do icone de pizza **/
+#icone:hover {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/** alteração para zoom da imagem do menu quando hover **/
+.hover-zoom:hover {
+  transform: scale(2);
+  transition: transform 1s;
+}
 
 /*** Youtube Video ***/
 .video {
